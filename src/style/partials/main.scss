@@ -225,7 +225,7 @@ section {
   &__catalog {
     display: flex;
     justify-content: space-between;
-    align-items: stretch;
+    align-items: center;
     margin-top: 27px;
   }
 
@@ -295,7 +295,7 @@ section {
   &__catalog {
     display: flex;
     justify-content: center;
-    align-items: stretch;
+    align-items: center;
     margin-top: 14px;
 
     img {
@@ -415,18 +415,17 @@ section {
   }
 }
 
-@media screen and (min-width: 980px) {
+@media screen and (min-width: 700px) {
   .wrapper {
     max-width: 100%;
 
     .container {
       max-width: 600px;
       margin: 0 auto;
+      position: relative;
     }
 
     .pay {
-      text-align: center;
-
       .header__whatsApp_link {
         margin: 20px auto;
       }
@@ -478,8 +477,8 @@ section {
     }
 
     .footer .mail__link {
-      font-size: 12px;
-      line-height: 15px;
+      font-size: 14px;
+      line-height: 17px;
     }
 
     .reviwe__catalog img {
