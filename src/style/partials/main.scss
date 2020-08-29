@@ -1201,13 +1201,16 @@ section {
     }
 
     .advantages__desc {
+      display: block;
       font-size: 20px;
       line-height: 23px;
-
-      span.db {
-        display: none !important;
-      }
+      box-sizing: border-box;
+      padding-left: 12px;
     }
+  }
+
+  .kays {
+    margin-top: 64px;
   }
 
   .header__subtitle {
@@ -1232,6 +1235,15 @@ section {
 
   .container {
     position: relative;
+  }
+  .who__item {
+    max-width: 205px;
+    margin-left: auto;
+    margin: auto;
+
+    &:nth-child(1) {
+      max-width: 225px;
+    }
   }
 
   .header {
@@ -1385,14 +1397,5 @@ section {
   }
   .kays__catalog {
     margin-top: 20px;
-  }
-
-  .header,
-  section,
-  .advantages,
-  .pay,
-  .do,
-  .cons {
-    padding: 10px;
   }
 }
