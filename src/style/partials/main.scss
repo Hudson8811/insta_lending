@@ -1001,6 +1001,23 @@ section {
 }
 
 @media screen and (max-width: 750px) {
+  .header {
+    padding: 82px 40px 32px;
+
+    .header__title {
+      margin-bottom: 33px;
+    }
+
+    .header__whatsApp_link {
+      margin: 31px auto;
+    }
+
+    .header__circle {
+      max-width: 323px;
+      width: 90%;
+    }
+  }
+
   .advantages {
     .kays {
       .who__abs {
