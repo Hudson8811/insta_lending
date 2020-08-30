@@ -96,6 +96,20 @@ section {
   }
 }
 
+.advantages .who__circle__wrapper2 {
+  animation: 1s linear 1s infinite circle3;
+}
+
+@keyframes circle3 {
+  0% {
+    transform: scale(1);
+  }
+
+  100% {
+    transform: scale(1.5);
+  }
+}
+
 .header {
   position: relative;
   padding: 21px 36px 26px;
@@ -580,11 +594,11 @@ section {
 .modal {
   .modal_heading {
     font-family: $bold;
-    font-size: 20px;
-    line-height: 25px;
+    font-size: 4.34vw;
+    line-height: 5.43vw;
     text-align: center;
     display: block;
-    margin-bottom: 20px;
+    margin-bottom: 4.34vw;
   }
 
   input {
@@ -592,15 +606,15 @@ section {
     outline: none;
     width: 100%;
     font-family: $light;
-    font-size: 16px;
-    line-height: 20px;
-    min-height: 40px;
+    font-size: 3.47vw;
+    line-height: 4.34vw;
+    min-height: 8.69vw;
     box-sizing: border-box;
-    padding: 5px 10px;
-    min-width: 240px;
+    padding: 1.08vw 2.17vw;
+    min-width: 52.17vw;
 
     & + input {
-      margin-top: 10px;
+      margin-top: 3.91vw;
     }
   }
 
@@ -609,9 +623,11 @@ section {
     border: none;
     box-shadow: none;
     max-width: none;
-    min-width: 240px;
-    font-size: 18px;
-    line-height: 20px;
+    min-width: 52.17vw;
+    font-size: 3.91vw;
+    line-height: 4.34vw;
+    height: 10.69vw;
+    margin-top: 3.91vw;
   }
 }
 
@@ -749,6 +765,9 @@ section {
       font-size: 35px;
       line-height: 42px;
       margin-top: 135px;
+      padding: 10px 20px;
+      border-radius: 10px;
+      background-color: #ffdcc8;
     }
 
     .pay li {
@@ -823,10 +842,10 @@ section {
     max-width: 1100px;
     left: auto;
     right: -150px;
-    top: 200px;
+    top: 283px;
 
-    @media screen and (min-width: 2000px) {
-      max-width: none;
+    @media screen and (min-width: 2900px) {
+      right: 17vw;
     }
   }
 
@@ -1055,6 +1074,10 @@ section {
 }
 
 @media screen and (max-width: 750px) {
+  .do .who__abs {
+    display: none;
+  }
+
   .who__item + .who__item {
     margin-top: 58px;
   }
@@ -1133,8 +1156,8 @@ section {
     }
 
     .header__subtitle {
-      font-size: 13.7px;
-      line-height: 17px;
+      font-size: 16px;
+      line-height: 19px;
 
       & + .header__subtitle {
         margin-top: 17px;
@@ -1803,8 +1826,8 @@ section {
   }
 
   .cons .header__subtitle {
-    font-size: 2.97vw;
-    line-height: 3.69vw;
+    font-size: 3.47vw;
+    line-height: 4.13vw;
   }
 
   .cons .header__subtitle + .header__subtitle {

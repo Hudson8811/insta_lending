@@ -3,7 +3,7 @@ $(document).ready(function () {
 
   function modal() {
     $.fancybox.open({
-      src: "#modal1",
+      src: "#modal2",
       type: "inline",
     });
   }
