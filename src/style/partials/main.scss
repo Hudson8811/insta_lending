@@ -57,6 +57,36 @@ section {
 }
 
 .header {
+  overflow: hidden;
+}
+
+.header__circle2 {
+  animation: 1s linear 1s infinite circle;
+  opacity: 0.2;
+  max-width: none !important;
+}
+
+@keyframes circle {
+  0% {
+    width: 40vw;
+  }
+
+  100% {
+    width: 50vw;
+  }
+}
+
+@keyframes circle2 {
+  0% {
+    width: 70.21vw;
+  }
+
+  100% {
+    width: 80.21vw;
+  }
+}
+
+.header {
   position: relative;
   padding: 21px 36px 26px;
   box-sizing: border-box;
@@ -222,10 +252,6 @@ section {
 
   &__item {
     width: 100%;
-
-    & + .who__item {
-      margin-top: 58px;
-    }
 
     img {
       display: block;
@@ -486,6 +512,8 @@ section {
 }
 
 .footer {
+  padding-bottom: 180px;
+
   .header__subtitle {
     font-size: 18px;
     line-height: 33px;
@@ -1001,6 +1029,14 @@ section {
 }
 
 @media screen and (max-width: 750px) {
+  .who__item + .who__item {
+    margin-top: 58px;
+  }
+
+  .footer {
+    padding-bottom: 19.13vw;
+  }
+
   .header {
     padding: 82px 40px 32px;
 
@@ -1010,11 +1046,6 @@ section {
 
     .header__whatsApp_link {
       margin: 31px auto;
-    }
-
-    .header__circle {
-      max-width: 323px;
-      width: 90%;
     }
   }
 
@@ -1369,33 +1400,409 @@ section {
 }
 
 @media screen and (max-width: 500px) {
+  .header__circle2 {
+    animation: 1s linear 1s infinite circle2;
+  }
+
   .who__content .who__desc:nth-child(3) {
     padding-right: 0;
   }
-}
 
-@media screen and (max-width: 440px) {
-  .header__title {
-    font-size: 40px;
-    line-height: 50px;
+  .header {
+    padding: 17.82vw 8.69vw 6.95vw;
+
+    .header__circle {
+      width: 70.21vw;
+    }
+
+    .header__title {
+      font-size: 11.73vw;
+      line-height: 13.04vw;
+      margin-bottom: 7.17vw;
+    }
+
+    .header__subtitle {
+      font-size: 4.78vw;
+      line-height: 5.86vw;
+    }
+
+    .header__whatsApp_link {
+      margin: 6.73vw auto;
+    }
   }
 
-  .who__title,
-  .advantages .kays .who__bot_title,
-  .reviwe .who__bot_title {
-    font-size: 40px;
+  .header__whatsApp_link {
+    font-size: 6.52vw;
+    line-height: 9.13vw;
+    height: 13.69vw;
+    max-width: 51.08vw;
+    border-radius: 2.6vw;
   }
 
-  .who__abs,
-  .advantages .kays .who__abs,
+  .header__subheader {
+    font-size: 3.26vw;
+    line-height: 3.69vw;
+  }
+
+  section,
+  .advantages,
+  .pay,
+  .cons {
+    padding: 7.82vw 8.69vw;
+  }
+
+  .who__abs {
+    font-size: 16.3vw;
+    line-height: 19.34vw;
+    top: 1.73vw;
+  }
+
+  .who__title {
+    font-size: 13.47vw;
+    line-height: 16.3vw;
+    margin-bottom: 2.17vw;
+  }
+
+  .who__top {
+    margin-bottom: 4.34vw;
+  }
+
+  .who__desc {
+    font-size: 4.56vw;
+    line-height: 5.43vw;
+  }
+
+  .who__content .who__desc {
+    &:nth-child(2),
+    &:nth-child(3) {
+      margin-bottom: 5.43vw;
+    }
+
+    &:nth-child(2) {
+      padding-right: 33.91vw;
+    }
+  }
+
+  .who__top img {
+    max-width: 31.52vw;
+    top: 20vw;
+  }
+
+  .who__bot .who__bot_title {
+    font-size: 5.65vw;
+    line-height: 6.95vw;
+  }
+
+  .who__container {
+    margin-top: 3.26vw;
+  }
+
+  .who__item {
+    &:nth-child(1) {
+      max-width: 48.91vw;
+
+      img {
+        width: 22.82vw;
+      }
+    }
+
+    &:nth-child(2) img {
+      width: 18.04vw;
+    }
+
+    &:nth-child(3) img {
+      width: 15.21vw;
+    }
+    &:nth-child(4) img {
+      width: 21.73vw;
+    }
+    max-width: 44.56vw;
+
+    & + .who__item {
+      margin-top: 12.6vw;
+    }
+
+    img {
+      margin: 0 auto 3.47vw;
+    }
+  }
+
+  .who__subtitle {
+    font-size: 5.65vw;
+    line-height: 6.73vw;
+  }
+
+  .who__bot_title {
+    font-size: 7.17vw;
+    line-height: 8.69vw;
+  }
+
+  .quesch .container .who__desc {
+    margin: 2.17vw 0;
+  }
+
+  .quesch .header__whatsApp_link {
+    margin-top: 3.04vw;
+  }
+
+  .advantages .who__bot_title {
+    font-size: 8.04vw;
+    line-height: 10vw;
+  }
+
+  .advantages .advantages__item {
+    margin-top: 17.39vw;
+  }
+
+  .advantages__item:nth-child(1) .advantages__icon {
+    width: 18.47vw;
+  }
+  .advantages__icon {
+    margin: 0 auto 5vw;
+  }
+
+  .advantages .advantages__title {
+    line-height: 6.95vw;
+    font-size: 5.86vw;
+  }
+
+  .advantages__line {
+    margin-top: 2.17vw;
+  }
+
+  .advantages .advantages__desc {
+    font-size: 4.34vw;
+    line-height: 5vw;
+    padding-left: 2.6vw;
+  }
+
+  .advantages__item:nth-child(3) .advantages__icon {
+    width: 20.21vw;
+  }
+
+  .advantages__item:nth-child(2) .advantages__icon {
+    width: 28.69vw;
+  }
+
+  .kays {
+    margin-top: 13.91vw;
+  }
+
+  .advantages .kays .who__abs {
+    font-size: 23.04vw;
+    line-height: 27.6vw;
+    left: 5.43vw;
+    top: -3.04vw;
+  }
+
+  .advantages .kays .who__bot_title {
+    font-size: 13.47vw;
+    line-height: 16.08vw;
+  }
+
+  .kays__catalog {
+    margin-top: 18.47vw;
+    padding: 0 11.08vw;
+  }
+
+  .slick-arrow {
+    width: 7.39vw;
+    height: 7.39vw;
+    margin-top: -3.69vw;
+    background: #ff685f 60% 50%/3.26vw auto url(../img/arow.svg) no-repeat;
+  }
+
+  .pay .who__abs {
+    left: -1.08vw;
+    top: -4.13vw;
+    line-height: 15.21vw;
+  }
+
+  .pay .who__bot_title {
+    font-size: 8.04vw;
+    line-height: 9.78vw;
+  }
+
+  .pay__wrapper {
+    margin-top: 11.95vw;
+  }
+
+  .pay__item:before {
+    left: -1.08vw;
+    top: 3.04vw;
+    width: 3.04vw;
+    height: 3.04vw;
+    border-width: 0.65vw;
+  }
+
+  .pay__content {
+    border-width: 0.75vw;
+    padding: 0 0 2.6vw 2.6vw;
+  }
+
+  .pay__content:before {
+    width: 4.34vw;
+    height: 6.52vw;
+    top: -0.65vw;
+    left: -2.6vw;
+  }
+
+  .pay__title {
+    font-size: 6.08vw;
+    line-height: 7.39vw;
+    margin-bottom: 6.52vw;
+  }
+
+  .wrapper .pay li {
+    font-size: 4.13vw;
+    line-height: 4.78vw;
+  }
+
+  .pay li + li {
+    margin-top: 0.65vw;
+  }
+
+  .pay__pays {
+    font-size: 6.08vw;
+    line-height: 7.39vw;
+    margin-top: 4.34vw;
+  }
+
+  .pay__content:after {
+    height: 0.75vw;
+    max-width: 54.34vw;
+  }
+
+  .pay .header__whatsApp_link {
+    max-width: 32.6vw;
+    margin-top: 5.43vw;
+    margin-left: 6.52vw;
+    height: 10.43vw;
+    border-radius: 2.17vw;
+    font-size: 5.65vw;
+    line-height: 6.73vw;
+  }
+
+  .pay__item + .pay__item {
+    margin-top: 11.95vw;
+  }
+
+  .do {
+    padding: 13.04vw 8.69vw 7.82vw;
+  }
+
+  .do .who__circle__wrapper {
+    left: -6.52vw;
+    width: 55.65vw;
+  }
+
+  .do .who__abs {
+    top: -8.69vw;
+    left: 2.6vw;
+  }
+
+  .do .who__bot_title {
+    font-size: 10.65vw;
+    line-height: 13.04vw;
+  }
+
+  .do__item {
+    padding: 0 0 0 6.52vw;
+    margin-top: 4.34vw;
+  }
+
+  .do__num {
+    font-size: 22.17vw;
+    line-height: 26.52vw;
+  }
+
+  .do__title {
+    font-size: 6.3vw;
+    line-height: 7.6vw;
+    margin-bottom: 8.69vw;
+  }
+
+  .do__desc {
+    font-size: 4.56vw;
+    line-height: 5.43vw;
+  }
+
+  .do .who__circle__wrapper:nth-child(1) {
+    top: 41.3vw;
+  }
+
+  .do .who__circle__wrapper:nth-child(2) {
+    top: 116.95vw;
+  }
+
+  .do .who__circle__wrapper:nth-child(3) {
+    top: 198.26vw;
+  }
+
+  .do .who__circle__wrapper:nth-child(4) {
+    top: 276.08vw;
+  }
+
+  .do .who__circle__wrapper:nth-child(5) {
+    top: 359.34vw;
+  }
+
   .reviwe .who__abs {
-    font-size: 50px;
+    top: -3.26vw;
+    font-size: 23.04vw;
+  }
+
+  .reviwe .who__bot_title {
+    font-size: 13.47vw;
+  }
+
+  .reviwe__catalog {
+    padding: 0 10.86vw;
+    margin-top: 6.52vw;
   }
 
   .cons .who__bot_title {
-    padding: 0;
+    font-size: 8.26vw;
+    line-height: 10vw;
+    margin-bottom: 6.08vw;
+    padding: 0 8.69vw;
   }
-  .kays__catalog {
-    margin-top: 20px;
+
+  .cons .header__subtitle {
+    font-size: 2.97vw;
+    line-height: 3.69vw;
+  }
+
+  .cons .header__subtitle + .header__subtitle {
+    margin-top: 3.69vw;
+  }
+
+  .cons .header__whatsApp_link {
+    margin-top: 6.52vw;
+  }
+
+  .footer .header__subtitle {
+    font-size: 3.91vw;
+    line-height: 7.17vw;
+  }
+
+  .footer .tel__link {
+    font-size: 6.08vw;
+    line-height: 7.39vw;
+    margin: 3.04vw auto 1.73vw;
+  }
+
+  .footer .mail__link {
+    font-size: 4.13vw;
+    line-height: 4.78vw;
+  }
+
+  .soc__catalog {
+    margin-top: 5.43vw;
+
+    a {
+      width: 6.08vw;
+      margin: 0 1.73vw;
+    }
   }
 }
