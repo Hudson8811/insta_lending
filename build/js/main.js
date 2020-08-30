@@ -59,9 +59,21 @@ $(document).ready(function () {
     });
   }
 
+  function modal2() {
+    $.fancybox.open({
+      src: "#modal2",
+      type: "inline",
+    });
+  }
+
   $(document).on("click", ".call--js", function (e) {
     e.preventDefault();
     modal();
+  });
+
+  $(document).on("click", ".cons--js", function (e) {
+    e.preventDefault();
+    modal2();
   });
 
   $(".kays__catalog").slick({

@@ -33,6 +33,10 @@ body {
   background-color: #fff;
 }
 
+video {
+  outline: none;
+}
+
 span.db {
   margin: 0 !important;
   padding: 0 !important;
@@ -48,6 +52,12 @@ span.db {
 .wrapper {
   width: 100%;
   margin: 0 auto;
+}
+
+@media screen and (min-width: 2000px) {
+  .wrapper .header__circle {
+    max-width: none !important;
+  }
 }
 
 section {
@@ -567,7 +577,7 @@ section {
   }
 }
 
-#modal1 {
+.modal {
   .modal_heading {
     font-family: $bold;
     font-size: 20px;
@@ -814,6 +824,10 @@ section {
     left: auto;
     right: -150px;
     top: 200px;
+
+    @media screen and (min-width: 2000px) {
+      max-width: none;
+    }
   }
 
   .container {
@@ -1061,6 +1075,10 @@ section {
     }
   }
 
+  .who__content .who__desc:nth-child(3) {
+    letter-spacing: 0.7px;
+  }
+
   .advantages {
     .kays {
       .who__abs {
@@ -1085,6 +1103,7 @@ section {
     .who__abs {
       left: -5px;
       top: -19px;
+      display: none;
     }
   }
   .do {
@@ -1434,7 +1453,7 @@ section {
     }
 
     .header__subtitle {
-      font-size: 4.78vw;
+      font-size: 4.7vw;
       line-height: 5.86vw;
     }
 
@@ -1503,6 +1522,7 @@ section {
   .who__bot .who__bot_title {
     font-size: 5.65vw;
     line-height: 6.95vw;
+    padding: 0 3.47vw;
   }
 
   .who__container {
@@ -1711,6 +1731,8 @@ section {
   .do .who__abs {
     top: -8.69vw;
     left: 2.6vw;
+
+    line-height: 15.34vw;
   }
 
   .do .who__bot_title {
