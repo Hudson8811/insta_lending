@@ -273,7 +273,7 @@ section {
     align-items: stretch;
     margin-top: 15px;
 
-    @media screen and (max-width: 750px) {
+    @media screen and (max-width: 999px) {
       display: block;
     }
   }
@@ -1043,7 +1043,7 @@ section {
 .kays__item {
   margin: 0 33px;
 
-  @media screen and (max-width: 750px) {
+  @media screen and (max-width: 999px) {
     margin: 0;
   }
 }
@@ -1494,7 +1494,7 @@ section {
   }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 999px) {
   .modal {
     .modal_heading {
       font-family: $bold;
