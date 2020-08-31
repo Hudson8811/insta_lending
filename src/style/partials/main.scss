@@ -110,6 +110,10 @@ section {
   }
 }
 
+.who .who__circle__wrapper2 {
+  animation: 1s linear 1s infinite circle3;
+}
+
 .header {
   position: relative;
   padding: 21px 36px 26px;
@@ -594,11 +598,11 @@ section {
 .modal {
   .modal_heading {
     font-family: $bold;
-    font-size: 4.34vw;
-    line-height: 5.43vw;
+    font-size: 3.34vw;
+    line-height: 4.43vw;
     text-align: center;
     display: block;
-    margin-bottom: 4.34vw;
+    margin-bottom: 3.34vw;
   }
 
   input {
@@ -606,15 +610,15 @@ section {
     outline: none;
     width: 100%;
     font-family: $light;
-    font-size: 3.47vw;
-    line-height: 4.34vw;
-    min-height: 8.69vw;
+    font-size: 2.47vw;
+    line-height: 3.34vw;
+    min-height: 5.69vw;
     box-sizing: border-box;
     padding: 1.08vw 2.17vw;
-    min-width: 52.17vw;
+    min-width: 32.17vw;
 
     & + input {
-      margin-top: 3.91vw;
+      margin-top: 2.91vw;
     }
   }
 
@@ -623,12 +627,22 @@ section {
     border: none;
     box-shadow: none;
     max-width: none;
-    min-width: 52.17vw;
-    font-size: 3.91vw;
-    line-height: 4.34vw;
-    height: 10.69vw;
-    margin-top: 3.91vw;
+    min-width: 32.17vw;
+    font-size: 2.91vw;
+    line-height: 3.34vw;
+    height: 5.69vw;
+    margin-top: 2.91vw;
   }
+}
+
+.fancybox-content {
+  padding: 4.68vw;
+}
+
+.fancybox-slide--html .fancybox-close-small {
+  padding: 0;
+  width: 4.25vw;
+  height: 4.25vw;
 }
 
 @media screen and (min-width: 750px) {
@@ -648,7 +662,7 @@ section {
 
     .container {
       max-width: 1200px;
-      width: 98%;
+      width: 85%;
       margin: 0 auto;
       position: relative;
     }
@@ -1163,6 +1177,11 @@ section {
       font-size: 16px;
       line-height: 19px;
 
+      span.hide {
+        display: block;
+        margin-top: 17px;
+      }
+
       & + .header__subtitle {
         margin-top: 17px;
       }
@@ -1181,7 +1200,15 @@ section {
   }
 
   .kays__link {
-    display: none;
+    font-size: 35px;
+    line-height: 42px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background-color: #ffdcc8;
+    display: block;
+    margin: 50px auto 0;
+    max-width: 261px;
+    text-align: center;
   }
 
   .pay__content:after {
@@ -1542,8 +1569,9 @@ section {
   }
 
   .who__top img {
-    max-width: 31.52vw;
-    top: 20vw;
+    max-width: 35.52vw;
+    top: 17.5vw;
+    right: -5vw;
   }
 
   .who__bot .who__bot_title {
@@ -1660,7 +1688,7 @@ section {
   }
 
   .kays__catalog {
-    margin-top: 18.47vw;
+    margin-top: 12.47vw;
     padding: 0 11.08vw;
   }
 
@@ -1832,6 +1860,10 @@ section {
   .cons .header__subtitle {
     font-size: 3.47vw;
     line-height: 4.13vw;
+
+    span.hide {
+      margin-top: 3.69vw;
+    }
   }
 
   .cons .header__subtitle + .header__subtitle {
@@ -1865,5 +1897,14 @@ section {
       width: 6.08vw;
       margin: 0 1.73vw;
     }
+  }
+
+  .kays__link {
+    font-size: 2.82vw;
+    line-height: 3.18vw;
+    max-width: 20.59vw;
+    margin-top: 2.6vw;
+    padding: 0.52vw 1.04vw;
+    border-radius: 0.52vw;
   }
 }
