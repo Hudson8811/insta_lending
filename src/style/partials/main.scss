@@ -646,6 +646,11 @@ section {
 }
 
 @media screen and (min-width: 750px) {
+  .who {
+    .who__desc + .who__desc {
+      margin-top: 30px;
+    }
+  }
   .slick-list {
     width: 100%;
   }
@@ -1485,6 +1490,46 @@ section {
 }
 
 @media screen and (max-width: 500px) {
+  .modal {
+    .modal_heading {
+      font-family: $bold;
+      font-size: 6.34vw;
+      line-height: 7.43vw;
+      text-align: center;
+      display: block;
+      margin-bottom: 4.34vw;
+    }
+
+    input {
+      display: block;
+      outline: none;
+      width: 100%;
+      font-family: $light;
+      font-size: 5.47vw;
+      line-height: 6.34vw;
+      min-height: 7.69vw;
+      box-sizing: border-box;
+      padding: 1.08vw 2.17vw;
+      min-width: 52.17vw;
+
+      & + input {
+        margin-top: 3.91vw;
+      }
+    }
+
+    .header__whatsApp_link {
+      outline: none;
+      border: none;
+      box-shadow: none;
+      max-width: none;
+      min-width: 52.17vw;
+      font-size: 5.91vw;
+      line-height: 6.34vw;
+      height: 9.69vw;
+      margin-top: 3.91vw;
+    }
+  }
+
   .header__circle2 {
     animation: 1s linear 1s infinite circle2;
   }
