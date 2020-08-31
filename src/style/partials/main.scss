@@ -645,7 +645,7 @@ section {
   height: 4.25vw;
 }
 
-@media screen and (min-width: 750px) {
+@media screen and (min-width: 999px) {
   .who {
     .who__desc + .who__desc {
       margin-top: 30px;
@@ -655,9 +655,6 @@ section {
     width: 100%;
   }
 
-  .reviwe__catalog img {
-    margin: 0 31px;
-  }
   .wrapper {
     max-width: 100%;
 
@@ -840,6 +837,15 @@ section {
       .header__whatsApp_link {
         margin-top: 90px;
       }
+    }
+  }
+}
+
+@media screen and (max-width: 999px) {
+  .reviwe__catalog {
+    margin-top: 80px;
+    img {
+      margin: 0 31px;
     }
   }
 }
@@ -1096,7 +1102,7 @@ section {
   }
 }
 
-@media screen and (max-width: 750px) {
+@media screen and (max-width: 999px) {
   .do .who__abs {
     display: none;
   }
@@ -1269,7 +1275,6 @@ section {
 
   .reviwe__catalog {
     padding: 0 50px;
-    margin-top: 30px;
   }
 
   .kays {
