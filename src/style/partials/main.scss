@@ -1959,19 +1959,17 @@ section {
   }
 }
 
-@media screen and( min-width:768px) {
-  .goanim.an.Tan,
-  .goanim .an.Tan {
-    transform: translateY(-50px);
-  }
-  .goanim .an,
-  .goanim.an {
-    opacity: 0;
-    transform: translateY(-50px);
-  }
-  .an {
-    transform: translate(0, 0) scale(1);
-    opacity: 1;
-    transition: 0.7s ease;
-  }
+.goanim.an.Tan,
+.goanim .an.Tan {
+  transform: translateY(-50px);
+}
+.goanim .an,
+.goanim.an {
+  opacity: 0;
+  transform: translateY(-50px);
+}
+.an {
+  transform: translate(0, 0) scale(1);
+  opacity: 1;
+  transition: 0.7s ease;
 }
