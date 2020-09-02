@@ -68,4 +68,33 @@ $(document).ready(function () {
       // instead of a settings object
     ],
   });
+
+  $(window).on("scroll", function () {
+    setTimeout(function () {
+      goanim();
+    }, 1000);
+  });
+  // goanim
+  setTimeout(function () {
+    goanim();
+  }, 1000);
+
+  function goanim() {
+    if ($(".goanim").length > 0) {
+      $(".goanim").each(function () {
+        if (
+          $(window).scrollTop() + window.innerHeight > $(this).offset().top &&
+          $(window).scrollTop() - window.innerHeight < $(this).offset().top
+        ) {
+          $(this).removeClass("goanim");
+        } else if (
+          $(this).hasClass("footan") &&
+          $(window).scrollTop() + window.innerHeight >
+            $("body").height() + 100 - $("body").height()
+        ) {
+          $(this).removeClass("goanim");
+        }
+      });
+    }
+  }
 });
