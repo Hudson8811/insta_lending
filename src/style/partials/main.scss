@@ -519,6 +519,10 @@ section {
     color: #ff685f;
     display: block;
     font-family: $bold;
+
+    @media screen and (min-width: 999px) {
+      min-height: 135px;
+    }
   }
   ul {
     list-style: none;
@@ -1800,18 +1804,22 @@ section {
     font-weight: bold;
   }
 
-  .cons .header__subtitle:nth-child(2) {
-    font-size: 3.47vw;
-    line-height: 4.13vw;
+  .cons {
+    padding-top: 4vw;
 
-    .big_pay {
-      &:after {
-        content: "";
-        display: inline-block;
-        width: 15px;
-        height: 2.4vw;
-        background: center/auto url(../img/pay_icon.svg) no-repeat;
-        margin-left: 0px;
+    .header__subtitle:nth-child(2) {
+      font-size: 4.47vw;
+      line-height: 5.13vw;
+
+      .big_pay {
+        &:after {
+          content: "";
+          display: inline-block;
+          width: 15px;
+          height: 3vw;
+          background: center/auto url(../img/pay_icon.svg) no-repeat;
+          margin-left: 0px;
+        }
       }
     }
   }
@@ -2061,12 +2069,12 @@ section {
   .cons .who__bot_title {
     font-size: 8.26vw;
     line-height: 10vw;
-    margin-bottom: 6.08vw;
-    padding: 0 8.69vw;
+    margin-bottom: 3.08vw;
+    padding: 0 6.69vw;
   }
 
   .cons .header__subtitle {
-    font-size: 3.47vw;
+    font-size: 3.7vw;
     line-height: 4.13vw;
 
     span.hide {
@@ -2074,11 +2082,12 @@ section {
   }
 
   .cons .header__subtitle + .header__subtitle {
-    margin-top: 3.69vw;
+    margin-top: 5.69vw;
   }
 
   .cons .header__whatsApp_link {
-    margin-top: 6.52vw;
+    margin-top: 3.52vw;
+    border-radius: 4.6vw;
   }
 
   .footer .header__subtitle {
