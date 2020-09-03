@@ -114,6 +114,11 @@ section {
   animation: 1s linear 1s infinite circle3;
 }
 
+.cons .header__subtitle:nth-child(2) {
+  font-size: 40px;
+  line-height: 48px;
+  font-weight: bold;
+}
 .header {
   position: relative;
   padding: 21px 36px 26px;
@@ -196,6 +201,14 @@ section {
     }
   }
 
+  &__content {
+    padding-right: 80px;
+
+    @media screen and (max-width: 1500px) {
+      padding-right: 0;
+    }
+  }
+
   &__circle {
     opacity: 0.5;
     fill: #ffdcc8;
@@ -254,6 +267,12 @@ section {
     font-family: $light;
     line-height: 25px;
     font-size: 21px;
+
+    @media screen and (max-width: 1500px) {
+      span.db {
+        display: none;
+      }
+    }
 
     & + .who__desc {
     }
@@ -336,17 +355,19 @@ section {
   .who__abs {
     left: -13px;
     top: -48px;
+    margin-left: 170px;
   }
 
   .who__bot_title {
     text-align: left;
+    margin-left: 170px;
   }
 
   &__catalog {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 200px;
+    margin-top: 130px;
   }
 
   &__item {
@@ -378,7 +399,7 @@ section {
     margin-top: 145px;
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+    align-items: stretch;
   }
 
   &__content {
@@ -386,6 +407,7 @@ section {
     box-sizing: border-box;
     border-left: 5px solid #ff685f;
     padding: 0 0 18px 18px;
+    height: calc(100% - 143px);
 
     &:before {
       content: "";
@@ -528,6 +550,22 @@ section {
 
   .header__subtitle {
     text-align: center;
+
+    .big_pay {
+      font-weight: 600;
+      display: inline-block;
+      justify-content: flex-start;
+      align-items: center;
+
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 28px;
+        background: center / auto url(../img/pay_icon.svg) no-repeat;
+        margin-left: 5px;
+      }
+    }
 
     & + .header__subtitle {
       margin-top: 50px;
@@ -721,7 +759,7 @@ section {
     }
 
     .who {
-      padding: 115px 0 150px;
+      padding: 100px 0 80px;
 
       &__container {
         margin-top: 100px;
@@ -781,8 +819,8 @@ section {
       font-size: 35px;
       line-height: 42px;
       margin-top: 135px;
-      padding: 10px 20px;
-      border-radius: 10px;
+      padding: 20px 45px;
+      border-radius: 15px;
       background-color: #ffdcc8;
     }
 
@@ -802,7 +840,7 @@ section {
     }
 
     .reviwe {
-      padding: 109px 0 126px;
+      padding: 110px 0 83px;
       .container:nth-child(1) {
         max-width: 1600px;
       }
@@ -825,13 +863,34 @@ section {
     }
 
     .quesch {
-      padding: 115px 0 95px;
+      padding: 80px 0 60px;
       .who__bot_title {
         margin-bottom: 60px;
       }
 
       .who__desc {
         text-align: center;
+        font-size: 40px;
+        line-height: 49px;
+        font-weight: 600;
+
+        .big_pay {
+          font-size: 60px;
+          line-height: 72px;
+          font-weight: 600;
+          display: inline-block;
+          justify-content: flex-start;
+          align-items: center;
+
+          &:after {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 36px;
+            background: center / auto url(../img/pay_icon.svg) no-repeat;
+            margin-left: 10px;
+          }
+        }
       }
 
       .header__whatsApp_link {
@@ -864,7 +923,7 @@ section {
 .advantages {
   position: relative;
   overflow: hidden;
-  padding: 130px 0 300px;
+  padding: 130px 0 160px;
 
   .who__circle__wrapper {
     width: 52vw;
@@ -922,6 +981,7 @@ section {
     color: #ff685f;
     text-align: center;
     display: block;
+    padding: 0 10px;
   }
 
   &__desc {
@@ -947,7 +1007,7 @@ section {
 }
 
 .do {
-  padding: 140px 0 109px;
+  padding: 130px 0 0px;
 
   .who__circle__wrapper {
     max-width: 460px;
@@ -1453,6 +1513,15 @@ section {
     line-height: 25px;
   }
 
+  .who {
+    .who__desc {
+      .hide {
+        display: block;
+        margin-top: 2.6vw;
+      }
+    }
+  }
+
   .do {
     .who__abs {
       top: -40px;
@@ -1610,7 +1679,7 @@ section {
   .who__content .who__desc {
     &:nth-child(2),
     &:nth-child(3) {
-      margin-bottom: 5.43vw;
+      margin-bottom: 2.6vw;
     }
 
     &:nth-child(2) {
@@ -1619,9 +1688,9 @@ section {
   }
 
   .who__top img {
-    max-width: 35.52vw;
-    top: 17.5vw;
-    right: -5vw;
+    max-width: 30.52vw;
+    top: 19.5vw;
+    right: 0vw;
   }
 
   .who__bot .who__bot_title {
@@ -1676,6 +1745,41 @@ section {
 
   .quesch .container .who__desc {
     margin: 2.17vw 0;
+    font-weight: bold;
+  }
+
+  .cons .header__subtitle:nth-child(2) {
+    font-size: 3.47vw;
+    line-height: 4.13vw;
+
+    .big_pay {
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 15px;
+        height: 2.6vw;
+        background: center/auto url(../img/pay_icon.svg) no-repeat;
+        margin-left: 0px;
+      }
+    }
+  }
+
+  .quesch .big_pay {
+    font-size: 4.78vw;
+    line-height: 4.78vw;
+    font-weight: 600;
+    display: inline-block;
+    justify-content: flex-start;
+    align-items: center;
+
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 20px;
+      height: 3.26vw;
+      background: center / auto url(../img/pay_icon.svg) no-repeat;
+      margin-left: 0;
+    }
   }
 
   .quesch .header__whatsApp_link {
@@ -1730,11 +1834,13 @@ section {
     line-height: 27.6vw;
     left: 5.43vw;
     top: -3.04vw;
+    margin-left: 0;
   }
 
   .advantages .kays .who__bot_title {
     font-size: 13.47vw;
     line-height: 16.08vw;
+    margin-left: 0;
   }
 
   .kays__catalog {
@@ -1761,7 +1867,7 @@ section {
   }
 
   .pay__wrapper {
-    margin-top: 11.95vw;
+    margin-top: 8.95vw;
   }
 
   .pay__item:before {
