@@ -35,10 +35,10 @@ body {
   font-weight: 400;
   color: #2d2927;
   background-color: #fff;
-  -webkit-font-smoothing: auto;
-  -moz-osx-font-smoothing: auto;
-  -o-font-smoothing: auto;
-  -moz-font-smoothing: auto;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: subpixel-antialiased;
+  -o-font-smoothing: subpixel-antialiased;
+  -moz-font-smoothing: subpixel-antialiased;
 }
 
 video {
@@ -536,7 +536,7 @@ section {
     line-height: 12px;
     font-family: $light;
     position: relative;
-    padding-left: 2.39vw;
+    padding-left: 20px;
 
     &:before {
       content: "- ";
@@ -596,6 +596,12 @@ section {
 
   .who__bot_title {
     text-align: left;
+    margin-left: 137px;
+  }
+
+  .who__abs {
+    margin-left: 137px;
+    top: -45px;
   }
 }
 
@@ -878,7 +884,7 @@ section {
     .kays__link {
       font-size: 35px;
       line-height: 42px;
-      margin-top: 135px;
+      margin-top: 50px;
       padding: 20px 45px;
       border-radius: 15px;
       background-color: #ffdcc8;
@@ -923,14 +929,15 @@ section {
     }
 
     .quesch {
-      padding: 80px 0 60px;
+      padding: 50px 0 60px;
       .who__bot_title {
-        margin-bottom: 60px;
+        margin-bottom: 20px;
+        font-size: 78px;
       }
 
       .who__desc {
         text-align: center;
-        font-size: 40px;
+        font-size: 37px;
         line-height: 49px;
         font-weight: 600;
 
@@ -946,7 +953,7 @@ section {
             content: "";
             display: inline-block;
             width: 24px;
-            height: 36px;
+            height: 45px;
             background: center / auto url(../img/pay_icon.svg) no-repeat;
             margin-left: 10px;
           }
@@ -954,7 +961,7 @@ section {
       }
 
       .header__whatsApp_link {
-        margin-top: 90px;
+        margin-top: 50px;
       }
     }
   }
@@ -1684,7 +1691,7 @@ section {
   }
 
   .header {
-    padding: 17.82vw 8.69vw 6.95vw;
+    padding: 14.82vw 7.69vw 6.95vw;
 
     .header__circle {
       width: 70.21vw;
@@ -1692,13 +1699,17 @@ section {
 
     .header__title {
       font-size: 11.73vw;
-      line-height: 13.04vw;
-      margin-bottom: 7.17vw;
+      line-height: 14.5vw;
+      margin-bottom: 6.5vw;
+      letter-spacing: 0.18vw;
     }
 
     .header__subtitle {
-      font-size: 4.7vw;
+      font-size: 4vw;
+      display: block;
+      text-align: center;
       line-height: 5.86vw;
+      letter-spacing: 0.108vw;
 
       &:after {
         height: 3.3vw;
@@ -1706,17 +1717,26 @@ section {
       }
     }
 
+    .header__subheader {
+      font-size: 3vw;
+      letter-spacing: -0.108vw;
+
+      span.hide {
+        display: block;
+      }
+    }
+
     .header__whatsApp_link {
-      margin: 6.73vw auto;
+      margin: 7vw auto;
     }
   }
 
   .header__whatsApp_link {
     font-size: 6.52vw;
     line-height: 9.13vw;
-    height: 13.69vw;
+    height: 12.69vw;
     max-width: 51.08vw;
-    border-radius: 2.6vw;
+    border-radius: 3vw;
   }
 
   .header__subheader {
@@ -1829,6 +1849,7 @@ section {
   .quesch .container .who__desc {
     margin: 2.17vw 0;
     font-weight: bold;
+    font-size: 3.56vw;
 
     .hide {
       display: block;
@@ -1856,7 +1877,7 @@ section {
   }
 
   .quesch .big_pay {
-    font-size: 4vw;
+    font-size: 5vw;
     line-height: 4vw;
     font-weight: 600;
     display: inline-block;
@@ -1867,7 +1888,7 @@ section {
       content: "";
       display: inline-block;
       width: 3vw;
-      height: 3vw;
+      height: 3.5vw;
       background: center / auto url(../img/pay_icon.svg) no-repeat;
       margin-left: 0;
     }
@@ -1890,7 +1911,7 @@ section {
     width: 18.47vw;
   }
   .advantages__icon {
-    margin: 0 auto 5vw;
+    margin: 0 auto 2vw;
   }
 
   .advantages .advantages__title {
@@ -1899,11 +1920,11 @@ section {
   }
 
   .advantages__line {
-    margin-top: 2.17vw;
+    margin-top: 0;
   }
 
   .advantages .advantages__desc {
-    font-size: 4.34vw;
+    font-size: 4vw;
     line-height: 5vw;
     padding-left: 2.6vw;
   }
@@ -1990,6 +2011,7 @@ section {
   .wrapper .pay li {
     font-size: 4.13vw;
     line-height: 4.78vw;
+    padding-left: 2.39vw;
   }
 
   .pay li + li {
@@ -2000,6 +2022,7 @@ section {
     font-size: 6.08vw;
     line-height: 7.39vw;
     margin-top: 4.34vw;
+    padding-top: 0;
   }
 
   .pay__content:after {
@@ -2022,7 +2045,7 @@ section {
   }
 
   .do {
-    padding: 13.04vw 8.69vw 7.82vw;
+    padding: 13.04vw 7.69vw 7.82vw;
   }
 
   .do .who__circle__wrapper {
@@ -2086,10 +2109,12 @@ section {
   .reviwe .who__abs {
     top: -3.26vw;
     font-size: 23.04vw;
+    margin-left: 0;
   }
 
   .reviwe .who__bot_title {
     font-size: 13.47vw;
+    margin-left: 0;
   }
 
   .reviwe__catalog {
@@ -2101,7 +2126,7 @@ section {
     font-size: 8.26vw;
     line-height: 10vw;
     margin-bottom: 3.08vw;
-    padding: 0 6.69vw;
+    padding: 0;
   }
 
   .cons .header__subtitle {
