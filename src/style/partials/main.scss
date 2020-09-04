@@ -55,6 +55,17 @@ span.db {
   }
 }
 
+@media screen and (max-width: 1320px) {
+  .who {
+    &__desc {
+      &:nth-child(1) {
+        span.db {
+          display: none;
+        }
+      }
+    }
+  }
+}
 .wrapper {
   width: 100%;
   margin: 0 auto;
@@ -522,6 +533,15 @@ section {
     font-size: 10px;
     line-height: 12px;
     font-family: $light;
+    position: relative;
+    padding-left: 2.39vw;
+
+    &:before {
+      content: "- ";
+      display: block;
+      position: absolute;
+      left: 0;
+    }
 
     & + li {
       margin-top: 3px;
