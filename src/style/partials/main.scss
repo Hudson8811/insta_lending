@@ -35,8 +35,10 @@ body {
   font-weight: 400;
   color: #2d2927;
   background-color: #fff;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
+  -o-font-smoothing: auto;
+  -moz-font-smoothing: auto;
 }
 
 video {
@@ -584,9 +586,11 @@ section {
     align-items: center;
     margin-top: 14px;
 
-    img {
+    img,
+    video {
       width: calc(33.333% - 120px / 3);
       display: block;
+      margin: 0 31px;
     }
   }
 
@@ -959,8 +963,9 @@ section {
 @media screen and (max-width: 999px) {
   .reviwe__catalog {
     margin-top: 80px;
-    img {
-      margin: 0 31px;
+    img,
+    video {
+      margin: 0 0;
     }
   }
 }
