@@ -1703,9 +1703,12 @@ section {
 
   section,
   .advantages,
-  .pay,
-  .cons {
+  .cons .pay {
     padding: 7.82vw 8.69vw;
+  }
+
+  .quesch {
+    padding: 7.82vw 3.69vw;
   }
 
   .who__abs {
@@ -1799,6 +1802,10 @@ section {
   .quesch .container .who__desc {
     margin: 2.17vw 0;
     font-weight: bold;
+
+    .hide {
+      display: block;
+    }
   }
 
   .cons {
