@@ -968,6 +968,11 @@ section {
 }
 
 @media screen and (max-width: 999px) {
+  .wrapper .pay__item:nth-child(3) li:last-child {
+    span.nowrap {
+      word-spacing: normal;
+    }
+  }
   .reviwe__catalog {
     margin-top: 80px;
     img,
