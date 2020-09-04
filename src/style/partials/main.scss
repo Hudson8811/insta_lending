@@ -41,6 +41,10 @@ body {
   -moz-font-smoothing: subpixel-antialiased;
 }
 
+.hide_input {
+  display: none !important;
+}
+
 video {
   outline: none;
 }

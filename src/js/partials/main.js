@@ -30,6 +30,17 @@ $("#form1").submit(function () {
 });
 
 $(document).ready(function () {
+  $(".pay .call--js").click(function () {
+    var service = $(this)
+      .siblings(".pay__content")
+      .children(".pay__title")
+      .text();
+
+    $(".hide_input").val(service);
+
+    console.log(service);
+  });
+
   $("input[name='phone']").mask(" +7 (999) 999-99-99");
 
   function modal() {
