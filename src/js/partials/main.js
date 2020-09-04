@@ -1,3 +1,34 @@
+function falidator(item) {
+  check = true;
+  $(item)
+    .find("input")
+    .each(function () {
+      if ($(this).hasClass("required") && $(this).val() == "") {
+        check = false;
+        $(this).css("border", "4px red solid");
+      } else {
+        $(this).css("border", "4px transparent solid");
+      }
+    });
+  if (check) {
+    return true;
+  } else {
+    return false;
+  }
+}
+
+$("#form1").submit(function () {
+  if (!falidator(this)) return false;
+  $.ajax({
+    type: "POST",
+    url: "php/form1.php",
+    data: $("#form1").serialize(),
+    success: function (html) {},
+  });
+  $("#form1").trigger("reset");
+  return false;
+});
+
 $(document).ready(function () {
   $("input[name='phone']").mask(" +7 (999) 999-99-99");
 
