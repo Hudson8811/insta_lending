@@ -35,6 +35,8 @@ body {
   font-weight: 400;
   color: #2d2927;
   background-color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 video {
@@ -462,7 +464,7 @@ section {
   &__item {
     width: calc(33.333% - 40px / 2);
     background-color: #fff;
-    padding: 52px 40px 56px;
+    padding: 52px 30px 56px;
     box-sizing: border-box;
     position: relative;
 
@@ -471,22 +473,13 @@ section {
       margin-top: 20px;
     }
 
-    &:nth-child(3) {
-      padding-right: 0;
-
-      ul {
-        li {
-        }
-      }
-    }
-
     &:before {
       content: "";
       display: block;
       width: 18px;
       height: 18px;
       position: absolute;
-      left: 33px;
+      left: 24px;
       top: 65px;
       background-color: #fff;
       box-sizing: border-box;
