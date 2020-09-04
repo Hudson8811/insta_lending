@@ -79,6 +79,12 @@ span.db {
   }
 }
 
+@media screen and (max-width: 1750px) {
+  .wrapper .pay .container {
+    width: 98%;
+  }
+}
+
 section {
   padding: 21px 36px 26px;
   box-sizing: border-box;
@@ -1852,7 +1858,7 @@ section {
   }
 
   .quesch .container .who__desc {
-    margin: 2.17vw 0;
+    margin: 4.17vw 0;
     font-weight: bold;
     font-size: 3.56vw;
 
