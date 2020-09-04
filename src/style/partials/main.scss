@@ -1224,7 +1224,7 @@ section {
   }
 
   .who__content .who__desc:nth-child(3) {
-    letter-spacing: 0.7px;
+    letter-spacing: -0.247vw;
   }
 
   .advantages {
@@ -1556,6 +1556,13 @@ section {
 
   .who {
     .who__desc {
+      letter-spacing: -0.2826vw;
+      word-spacing: 0.869vw;
+      line-height: 5vw;
+      .desktop {
+        display: none;
+      }
+
       .hide {
         display: block;
         margin-top: 2.6vw;
@@ -1717,7 +1724,7 @@ section {
   }
 
   .who__top {
-    margin-bottom: 4.34vw;
+    margin-bottom: 11.34vw;
   }
 
   .who__desc {
