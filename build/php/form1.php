@@ -9,7 +9,7 @@
 </head>
 <body>
 <?php
-$myaddr = "rudenscky2011@yandex.ru";
+$myaddr = "smm.prosto@mail.ru";
 
 
 
