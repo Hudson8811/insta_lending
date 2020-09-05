@@ -46,10 +46,10 @@ body {
   font-weight: 400;
   color: #2d2927;
   background-color: #fff;
-  // -webkit-font-smoothing: subpixel-antialiased;
-  // -moz-osx-font-smoothing: subpixel-antialiased;
-  // -o-font-smoothing: subpixel-antialiased;
-  // -moz-font-smoothing: subpixel-antialiased;
+  -webkit-font-smoothing: subpixel-antialiased;
+  -moz-osx-font-smoothing: subpixel-antialiased;
+  -o-font-smoothing: subpixel-antialiased;
+  -moz-font-smoothing: subpixel-antialiased;
 }
 
 video {
@@ -196,13 +196,13 @@ section {
     font-weight: 600;
     display: inline-block;
 
-    // &::after {
-    //   content: "";
-    //   display: inline-block;
-    //   width: 24px;
-    //   height: 24px;
-    //   background: center / auto url(../img/pay_icon.svg) no-repeat;
-    // }
+    &::after {
+      content: "";
+      display: inline-block;
+      width: 24px;
+      height: 24px;
+      background: center / auto url(../img/pay_icon.svg) no-repeat;
+    }
   }
 
   &__bot_wrapper {
@@ -646,14 +646,14 @@ section {
       justify-content: flex-start;
       align-items: center;
 
-      // &:after {
-      //   content: "";
-      //   display: inline-block;
-      //   width: 24px;
-      //   height: 28px;
-      //   background: center / auto url(../img/pay_icon.svg) no-repeat;
-      //   margin-left: 5px;
-      // }
+      &:after {
+        content: "";
+        display: inline-block;
+        width: 24px;
+        height: 28px;
+        background: center / auto url(../img/pay_icon.svg) no-repeat;
+        margin-left: 5px;
+      }
     }
 
     & + .header__subtitle {
@@ -973,14 +973,14 @@ section {
           justify-content: flex-start;
           align-items: center;
 
-          // &:after {
-          //   content: "";
-          //   display: inline-block;
-          //   width: 24px;
-          //   height: 45px;
-          //   background: center / auto url(../img/pay_icon.svg) no-repeat;
-          //   margin-left: 10px;
-          // }
+          &:after {
+            content: "";
+            display: inline-block;
+            width: 24px;
+            height: 45px;
+            background: center / auto url(../img/pay_icon.svg) no-repeat;
+            margin-left: 10px;
+          }
         }
       }
 
@@ -1908,14 +1908,14 @@ section {
       line-height: 5.13vw;
 
       .big_pay {
-        // &:after {
-        //   content: "";
-        //   display: inline-block;
-        //   width: 15px;
-        //   height: 3vw;
-        //   background: center/auto url(../img/pay_icon.svg) no-repeat;
-        //   margin-left: 0px;
-        // }
+        &:after {
+          content: "";
+          display: inline-block;
+          width: 15px;
+          height: 3vw;
+          background: center/auto url(../img/pay_icon.svg) no-repeat;
+          margin-left: 0px;
+        }
       }
     }
   }
@@ -1928,14 +1928,14 @@ section {
     justify-content: flex-start;
     align-items: center;
 
-    // &:after {
-    //   content: "";
-    //   display: inline-block;
-    //   width: 3vw;
-    //   height: 3.5vw;
-    //   background: center / auto url(../img/pay_icon.svg) no-repeat;
-    //   margin-left: 0;
-    // }
+    &:after {
+      content: "";
+      display: inline-block;
+      width: 3vw;
+      height: 3.5vw;
+      background: center / auto url(../img/pay_icon.svg) no-repeat;
+      margin-left: 0;
+    }
   }
 
   .quesch .header__whatsApp_link {

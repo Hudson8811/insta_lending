@@ -49,37 +49,6 @@ a.destroy=function(){for(var f=0;f<a.elems.length;f++)a.elems[f].style.cssText=d
 
 /* my scripts */
 
-function falidator(item) {
-  check = true;
-  $(item)
-    .find("input")
-    .each(function () {
-      if ($(this).hasClass("required") && $(this).val() == "") {
-        check = false;
-        $(this).css("border", "4px red solid");
-      } else {
-        $(this).css("border", "4px transparent solid");
-      }
-    });
-  if (check) {
-    return true;
-  } else {
-    return false;
-  }
-}
-
-$("#form1").submit(function () {
-  if (!falidator(this)) return false;
-  $.ajax({
-    type: "POST",
-    url: "php/form1.php",
-    data: $("#form1").serialize(),
-    success: function (html) {},
-  });
-  $("#form1").trigger("reset");
-  return false;
-});
-
 $(document).ready(function () {
   $(".pay .call--js").click(function () {
     var service = $(this)
@@ -90,6 +59,37 @@ $(document).ready(function () {
     $(".hide_input").val(service);
 
     console.log(service);
+  });
+
+  function falidator(item) {
+    check = true;
+    $(item)
+      .find("input")
+      .each(function () {
+        if ($(this).hasClass("required") && $(this).val() == "") {
+          check = false;
+          $(this).css("border", "4px red solid");
+        } else {
+          $(this).css("border", "4px transparent solid");
+        }
+      });
+    if (check) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  $("#form1").submit(function () {
+    if (!falidator(this)) return false;
+    $.ajax({
+      type: "POST",
+      url: "php/form1.php",
+      data: $("#form1").serialize(),
+      success: function (html) {},
+    });
+    $("#form1").trigger("reset");
+    return false;
   });
 
   $("input[name='phone']").mask(" +7 (999) 999-99-99");
