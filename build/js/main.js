@@ -61,41 +61,6 @@ $(document).ready(function () {
     console.log(service);
   });
 
-  function falidator(item) {
-    check = true;
-    $(item)
-      .find("input")
-      .each(function () {
-        if ($(this).hasClass("required") && $(this).val() == "") {
-          check = false;
-          $(this).css("border", "4px red solid");
-        } else {
-          $(this).css("border", "4px transparent solid");
-        }
-      });
-    if (check) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-
-  $("#form1").submit(function () {
-    if (!falidator(this)) return false;
-
-    $.ajax({
-      type: "POST",
-      url: "php/form1.php",
-      data: $("#form1").serialize(),
-      error: function (request, status, error) {
-        alert("Error: " + error);
-      },
-      success: function (html) {},
-    });
-    $("#form1").trigger("reset");
-    return false;
-  });
-
   $("input[name='phone']").mask(" +7 (999) 999-99-99");
 
   function modal() {
@@ -164,5 +129,44 @@ $(document).ready(function () {
       // settings: "unslick"
       // instead of a settings object
     ],
+  });
+
+  var check = true;
+
+  function validator(item) {
+    check = true;
+
+    $(item)
+      .find("required")
+      .each(function () {
+        if ($(this).hasClass("required") && $(this).val() == "") {
+          check = false;
+          $(this).css("border", "1px solid red");
+        } else {
+          $(this).css("border", "1px solid transparent");
+        }
+      });
+
+    if (check) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+
+  $("#form1").submit(function () {
+    if (!validator(this)) {
+      return false;
+    }
+
+    $.ajax({
+      type: "POST",
+      url: "php/form1.php",
+      data: $("#form1").serialize(),
+      success: function (html) {},
+    });
+
+    $("#form1").trigger("reset");
+    return false;
   });
 });

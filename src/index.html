@@ -520,6 +520,21 @@ viewBox="0 0 786 786" style="enable-background:new 0 0 786 786;" xml:space="pres
         </div>
       </section>
     </div>
+
+    <div class="modal-fancy modal" id="modal2" style="display: none;">
+
+      
+      <form action="php/form1.php" method="post" id="form1" name="call-form">
+        <h2 class="modal_heading">Получите консультацию</h2>
+        <input  class="required" required="required" name="name" type="text" placeholder="Имя" />
+        <input   class="required" required="required" type="text" placeholder="Телефон" name="phone" />
+        <input  class="hide_input" type="hidden" name="service" />
+        <button value="" name="call-submit" type="submit" class="header__whatsApp_link required">Получить</button>
+        <input autocomplete="off" type="hidden" name="call-control" class="call-control required" value="0">
+      </form>
+    </div>
+
+    
     <!-- Marquiz script start -->
     <script
       src="//script.marquiz.ru/v1.js"
@@ -539,18 +554,7 @@ viewBox="0 0 786 786" style="enable-background:new 0 0 786 786;" xml:space="pres
     <!-- Marquiz script end -->
 
 
-    <div class="modal-fancy modal" id="modal2" style="display: none;">
 
-      
-      <form action="php/form1.php" method="post" id="form1" name="call-form">
-        <h2 class="modal_heading">Получите консультацию</h2>
-        <input required class="required" required="required" name="name" type="text" placeholder="Имя" />
-        <input required  class="required" required="required" type="text" placeholder="Телефон" name="phone" />
-        <input  class="hide_input" type="hidden" name="service" />
-        <button value="" name="call-submit" type="submit" class="header__whatsApp_link required">Получить</button>
-        <input autocomplete="off" type="hidden" name="call-control" class="call-control required" value="0">
-      </form>
-    </div>
 
 
 
