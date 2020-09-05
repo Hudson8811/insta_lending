@@ -17,9 +17,9 @@ $myaddr = "rudenscky2011@yandex.ru";
 
 if (isset($_POST['call-control']) && $_POST['call-control'] == 0){
     
-    $number = $_POST['phone'];
-    $name = $_POST['name'];
-    $service = $_POST['service']
+    $number = htmlspecialchars($_POST['phone']);
+    $name = htmlspecialchars($_POST['name']);
+    $service = htmlspecialchars($_POST['service']);
 
     $headers = "MIME-Version: 1.0\r\n";
     $headers = "Content-Type: text/plain;charset=utf-8";

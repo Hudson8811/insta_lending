@@ -31,6 +31,7 @@ $(document).ready(function () {
 
   $("#form1").submit(function () {
     if (!falidator(this)) return false;
+
     $.ajax({
       type: "POST",
       url: "php/form1.php",
