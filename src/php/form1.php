@@ -28,9 +28,6 @@ if (isset($_POST['call-control']) && $_POST['call-control'] == 0){
     $text = " \nТелефон: ".$number."\nИмя: ".$name."\nУслуга: ".$service;
     mail($myaddr, $subj, $text, $headers, $from);
     echo "";
-
-    
-    
     } else {echo "Нет ПОСТА";} 
     ?>
 </body>

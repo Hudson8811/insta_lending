@@ -1,14 +1,4 @@
 @font-face {
-  font-family: "Conv_futuralightc";
-  src: url("../fonts/futuralightc.eot");
-  src: local("☺"), url("../fonts/futuralightc.woff") format("woff"),
-    url("../fonts/futuralightc.ttf") format("truetype"),
-    url("../fonts/futuralightc.svg") format("svg");
-  font-weight: normal;
-  font-style: normal;
-}
-
-@font-face {
   font-family: "Conv_futurademic";
   src: url("../fonts/futurademic.eot");
   src: local("☺"), url("../fonts/futurademic.woff") format("woff"),
@@ -18,7 +8,28 @@
   font-style: normal;
 }
 
+@font-face {
+  font-family: "Conv_futurabookc";
+  src: url("../fonts/futurabookc.eot");
+  src: local("☺"), url("../fonts/futurabookc.woff") format("woff"),
+    url("../fonts/futurabookc.ttf") format("truetype"),
+    url("../fonts/futurabookc.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Conv_futuralightc";
+  src: url("../fonts/futuralightc.eot");
+  src: local("☺"), url("../fonts/futuralightc.woff") format("woff"),
+    url("../fonts/futuralightc.ttf") format("truetype"),
+    url("../fonts/futuralightc.svg") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 $bold: "Conv_futurademic";
+$medium: "Conv_futurabookc";
 $light: "Conv_futuralightc";
 
 b {
@@ -35,10 +46,10 @@ body {
   font-weight: 400;
   color: #2d2927;
   background-color: #fff;
-  -webkit-font-smoothing: subpixel-antialiased;
-  -moz-osx-font-smoothing: subpixel-antialiased;
-  -o-font-smoothing: subpixel-antialiased;
-  -moz-font-smoothing: subpixel-antialiased;
+  // -webkit-font-smoothing: subpixel-antialiased;
+  // -moz-osx-font-smoothing: subpixel-antialiased;
+  // -o-font-smoothing: subpixel-antialiased;
+  // -moz-font-smoothing: subpixel-antialiased;
 }
 
 video {
@@ -171,7 +182,7 @@ section {
   }
 
   &__subtitle {
-    font-family: $light;
+    font-family: $medium;
     font-size: 22px;
     line-height: 27px;
     display: block;
@@ -185,13 +196,13 @@ section {
     font-weight: 600;
     display: inline-block;
 
-    &::after {
-      content: "";
-      display: inline-block;
-      width: 24px;
-      height: 24px;
-      background: center / auto url(../img/pay_icon.svg) no-repeat;
-    }
+    // &::after {
+    //   content: "";
+    //   display: inline-block;
+    //   width: 24px;
+    //   height: 24px;
+    //   background: center / auto url(../img/pay_icon.svg) no-repeat;
+    // }
   }
 
   &__bot_wrapper {
@@ -383,6 +394,10 @@ section {
   .header__whatsApp_link {
     margin-bottom: 0;
     margin-top: 14px;
+  }
+
+  .who__desc {
+    font-family: $medium;
   }
 }
 
@@ -631,14 +646,14 @@ section {
       justify-content: flex-start;
       align-items: center;
 
-      &:after {
-        content: "";
-        display: inline-block;
-        width: 24px;
-        height: 28px;
-        background: center / auto url(../img/pay_icon.svg) no-repeat;
-        margin-left: 5px;
-      }
+      // &:after {
+      //   content: "";
+      //   display: inline-block;
+      //   width: 24px;
+      //   height: 28px;
+      //   background: center / auto url(../img/pay_icon.svg) no-repeat;
+      //   margin-left: 5px;
+      // }
     }
 
     & + .header__subtitle {
@@ -810,6 +825,7 @@ section {
     }
 
     .header__title {
+      font-family: $bold;
       font-size: 105px;
       line-height: 100px;
       margin-bottom: 58px;
@@ -957,14 +973,14 @@ section {
           justify-content: flex-start;
           align-items: center;
 
-          &:after {
-            content: "";
-            display: inline-block;
-            width: 24px;
-            height: 45px;
-            background: center / auto url(../img/pay_icon.svg) no-repeat;
-            margin-left: 10px;
-          }
+          // &:after {
+          //   content: "";
+          //   display: inline-block;
+          //   width: 24px;
+          //   height: 45px;
+          //   background: center / auto url(../img/pay_icon.svg) no-repeat;
+          //   margin-left: 10px;
+          // }
         }
       }
 
@@ -1240,6 +1256,21 @@ section {
   .advantages .advantages__item {
     width: 100%;
     margin-top: 80px;
+    min-width: 1px;
+  }
+}
+
+@media screen and (max-width: 1800px) {
+  .advantages__item {
+    width: calc(33.333% - 40px * 2 / 3);
+    min-width: 455px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .advantages__wrapper {
+    flex-wrap: wrap;
+    justify-content: center;
   }
 }
 
@@ -1877,14 +1908,14 @@ section {
       line-height: 5.13vw;
 
       .big_pay {
-        &:after {
-          content: "";
-          display: inline-block;
-          width: 15px;
-          height: 3vw;
-          background: center/auto url(../img/pay_icon.svg) no-repeat;
-          margin-left: 0px;
-        }
+        // &:after {
+        //   content: "";
+        //   display: inline-block;
+        //   width: 15px;
+        //   height: 3vw;
+        //   background: center/auto url(../img/pay_icon.svg) no-repeat;
+        //   margin-left: 0px;
+        // }
       }
     }
   }
@@ -1897,14 +1928,14 @@ section {
     justify-content: flex-start;
     align-items: center;
 
-    &:after {
-      content: "";
-      display: inline-block;
-      width: 3vw;
-      height: 3.5vw;
-      background: center / auto url(../img/pay_icon.svg) no-repeat;
-      margin-left: 0;
-    }
+    // &:after {
+    //   content: "";
+    //   display: inline-block;
+    //   width: 3vw;
+    //   height: 3.5vw;
+    //   background: center / auto url(../img/pay_icon.svg) no-repeat;
+    //   margin-left: 0;
+    // }
   }
 
   .quesch .header__whatsApp_link {
