@@ -86,6 +86,9 @@ $(document).ready(function () {
       type: "POST",
       url: "php/form1.php",
       data: $("#form1").serialize(),
+      error: function (request, status, error) {
+        alert("Error: " + error);
+      },
       success: function (html) {},
     });
     $("#form1").trigger("reset");

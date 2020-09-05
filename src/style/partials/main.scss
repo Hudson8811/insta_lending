@@ -43,7 +43,7 @@ b {
 body {
   margin: 0;
   padding: 0;
-  font-weight: 400;
+
   color: #2d2927;
   background-color: #fff;
   -webkit-font-smoothing: subpixel-antialiased;
@@ -153,7 +153,6 @@ section {
 .cons .header__subtitle:nth-child(2) {
   font-size: 40px;
   line-height: 48px;
-  font-weight: bold;
 }
 .header {
   position: relative;
@@ -193,7 +192,6 @@ section {
   }
 
   .header__subtitle {
-    font-weight: 600;
     display: inline-block;
 
     &::after {
@@ -641,7 +639,6 @@ section {
     text-align: center;
 
     .big_pay {
-      font-weight: 600;
       display: inline-block;
       justify-content: flex-start;
       align-items: center;
@@ -963,12 +960,11 @@ section {
         text-align: center;
         font-size: 37px;
         line-height: 49px;
-        font-weight: 600;
 
         .big_pay {
           font-size: 60px;
           line-height: 72px;
-          font-weight: 600;
+
           display: inline-block;
           justify-content: flex-start;
           align-items: center;
@@ -1892,7 +1888,7 @@ section {
 
   .quesch .container .who__desc {
     margin: 4.17vw 0;
-    font-weight: bold;
+
     font-size: 3.56vw;
 
     .hide {
@@ -1923,7 +1919,7 @@ section {
   .quesch .big_pay {
     font-size: 5vw;
     line-height: 4vw;
-    font-weight: 600;
+
     display: inline-block;
     justify-content: flex-start;
     align-items: center;
